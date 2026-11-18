@@ -19,6 +19,10 @@ Cloudflare offers the following MCP servers. The domain-specific servers are inc
 | [**Cloudflare Blog server**](/apps/cloudflare-blog)                              | Search and read posts from the Cloudflare Blog                                                  | `https://blog.mcp.cloudflare.com/mcp`       |
 | [**Demo Day server**](/apps/demo-day)                                            | Demonstrate a minimal Cloudflare MCP server                                                     | `https://demo-day.mcp.cloudflare.com/mcp`   |
 
+An experimental [SQL API server](/apps/sql-api) provides `sql_query` for read-only analytics queries and `sql_datasets` for dataset discovery. It is available locally, not at a public MCP URL.
+
+To connect, copy `apps/sql-api/.dev.vars.example` to `apps/sql-api/.dev.vars`, set `DEV_CLOUDFLARE_API_TOKEN` to a token with Account Analytics Read, access to its account through `GET /accounts`, and any dataset-specific permissions, then run `pnpm --filter sql-api-mcp-server dev`. Point an MCP client at `http://localhost:8987/mcp`; local development uses the configured token without requiring the client to send a bearer token. Use `sql_datasets` to discover available dataset names before calling `sql_query`.
+
 <details>
 <summary><strong>Deprecated servers</strong></summary>
 

@@ -1,0 +1,19 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"main": "src/sql-api.app.ts",
+	"compatibility_date": "2025-03-10",
+	"compatibility_flags": ["nodejs_compat"],
+	"name": "mcp-cloudflare-sql-api-dev",
+	"kv_namespaces": [{ "binding": "OAUTH_KV", "id": "DEV_KV" }],
+	"vars": {
+		"ENVIRONMENT": "development",
+		"MCP_SERVER_NAME": "sql-api",
+		"MCP_SERVER_VERSION": "0.1.0",
+		"CLOUDFLARE_CLIENT_ID": "<PLACEHOLDER>",
+		"CLOUDFLARE_CLIENT_SECRET": "<PLACEHOLDER>"
+	},
+	"dev": { "port": 8987 },
+	"workers_dev": false,
+	"preview_urls": false,
+	"analytics_engine_datasets": [{ "binding": "MCP_METRICS", "dataset": "mcp-metrics-dev" }]
+}
