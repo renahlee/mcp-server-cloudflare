@@ -18,6 +18,7 @@ Cloudflare offers the following MCP servers. The domain-specific servers are inc
 | [**Cloudflare One CASB server**](/apps/cloudflare-one-casb)                      | Quickly identify any security misconfigurations for SaaS applications to safeguard users & data | `https://casb.mcp.cloudflare.com/mcp`       |
 | [**Cloudflare Blog server**](/apps/cloudflare-blog)                              | Search and read posts from the Cloudflare Blog                                                  | `https://blog.mcp.cloudflare.com/mcp`       |
 | [**Demo Day server**](/apps/demo-day)                                            | Demonstrate a minimal Cloudflare MCP server                                                     | `https://demo-day.mcp.cloudflare.com/mcp`   |
+| [**SQL API server**](/apps/sql-api)                                              | Query Cloudflare analytics datasets with read-only SQL                                          | `https://sql.mcp.cloudflare.com/mcp`        |
 
 <details>
 <summary><strong>Deprecated servers</strong></summary>
